@@ -5,7 +5,7 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.count > 2
     array = ["dogs", "cats", "mice"]
-    array[-1]<<"and"
-    array.join(", ")
+    a = "and "<< array[-1]
+    (array.join(", ")<< a).chomp(",")
   end
 end
