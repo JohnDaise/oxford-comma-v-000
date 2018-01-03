@@ -6,6 +6,6 @@ def oxford_comma(array)
   elsif array.count > 2
     array = ["dogs", "cats", "mice"]
     a = "and "<< array[-1]
-    (array.join(", ")<< a).chomp(",")
+    array.join(", ")<< a
   end
 end
